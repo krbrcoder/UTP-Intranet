@@ -1,0 +1,211 @@
+// _homepage.scss
+
+/**************************************************
+ **************************************************
+ HOMEPAGE CONTENT
+ **************************************************
+ **************************************************/
+
+#left-masthead {
+  .ui.card .image>.ui.ribbon.label, .ui.image>.ui.ribbon.label {
+    bottom: 1.75rem;
+    top: inherit;
+    font-size: 1.5rem;
+    border-radius: 0;
+    background-color: rgba($primary, .9);
+    color: white;
+    &:hover, &:focus, &:active {
+      color: $hazy;
+      background-color: rgba($secondary, .9);
+    }
+    .readmore {
+      font-size: 1.1rem;
+      font-weight: 100;
+    }
+  }
+  .ui.blue.big.top.right.attached.label{
+    background-color: rgba($secondary, .9)!important;
+    &:hover, &:focus, &:active {
+      background-color: rgba($primary, .9)!important;
+    }
+  }
+}
+#right-masthead {
+  padding: 0 7px 0 17px;
+  font-size: .9rem;
+  .date {
+    font-size: 12px;
+  }
+  .horizontal {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    align-content: stretch;
+    border-radius: 0;
+    margin: 15px 0;
+    .image img {
+      width: 128px;
+      height: 128px;
+      border-radius: 0;
+    }
+    .content {
+      max-width: 62%;
+      flex-grow: 2;
+      border-top: none;
+      a.header {
+        font-size: 1rem;
+        .title {
+          font-size: .85rem;
+          color: $primary;
+          text-decoration: underline;
+          text-decoration-style: dotted;
+        }
+        .date {
+          color: $darkgray;
+          font-size: .75rem;
+        }
+      }
+    }
+  }
+}
+
+#employee-relations, #events-recent-news {
+  .headline {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 0;
+    h2 {
+      margin: 20px 0 0;
+      font-size: 2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $secondary;
+    }
+  }
+  .container.cards {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ui.segment{
+    .item a.header{
+      color: $primary!important;
+      &:hover{
+        color: $secondary!important;
+      }
+    }
+  }
+  .ui.card {
+    flex-grow: 3;
+//    align-self: flex-start;
+    padding: 0;
+    border-radius: 0;
+    .top {
+      border-bottom: 1px solid $border;
+      max-height: 50px;
+      img {
+        max-width: 18px;
+        margin-left: 2px;
+        margin-top: -9px;
+      }
+      .meta {
+        a {
+          line-height: 2;
+          color: $primary;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+    h3 {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $darkgray;
+    }
+    .header {
+      font-family: $freightsans;
+    }
+    .meta {
+      font-family: $freightsanscompressed;
+      color: $darkgray;
+    }
+    iframe {
+      min-height: 200px;
+      width: 100%;
+      border: none;
+    }
+  }
+}
+
+#calendar {
+  .calendar {
+    margin: 0;
+    border-bottom: 1px solid $border;
+    &:last-child {
+      border-bottom: none;
+    }
+    .item {
+      padding: 4% 4% 2%;
+      .caldate {
+        margin-left: -3%;
+        display: block;
+        float: left;
+        clear: both;
+        color: $darkgray;
+        width: 25%;
+        line-height: 1.7rem;
+        font-size: 1.5rem;
+        .month {
+          display: block;
+          text-align: center;
+          letter-spacing: -1px;
+          text-transform: uppercase;
+        }
+        .day {
+          display: block;
+          text-align: center;
+        }
+      }
+      .calmeta {
+        color: $darkgray;
+        display: block;
+        float: left;
+        width: 75%;
+        .title {
+        }
+        .location {
+          color: lighten($darkgray, 15%);
+          font-size: 12px;
+        }
+        a {
+          font-size: 11px;
+          line-height: 2.5;
+        }
+      }
+    }
+  }
+}
+
+#letstalk{
+  #title-panel{
+    background-color:$hazy;
+  }
+  .items{
+      .item a {
+      color: $primary;
+      &:hover, &:active, &:focus {
+        color: $hover;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #left-masthead {
+    h2 {
+      max-width: 715px;
+    }
+  }
+}

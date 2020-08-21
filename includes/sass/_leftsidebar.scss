@@ -1,0 +1,39 @@
+
+/**************************************************
+ **************************************************
+ LEFT SIDEBAR
+ **************************************************
+ **************************************************/
+#left-sidebar{
+  @include unstyled-list;
+  @include primary-orange-label-ribbon;
+
+  .sidemenu-page{
+    font-size: unset;
+    line-height: 1.2!important;
+    .sidebar-menu-level-1 > a {
+      border-bottom: 2px solid $border;
+      border-left: 2px solid $border;
+      color: rgba($secondary, .9);
+    }
+    .sidebar-menu-level-1, .sidebar-menu-level-2{
+      a{
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        &:hover, &:focus, &:active {
+          color: $hazy;
+          background-color: rgba($secondary, .9);
+        }
+      }
+      .current-menu-item{
+        color: $hazy;
+        background-color: rgba($secondary, .9);
+      }
+    }
+    .sidebar-menu-level-2{
+      margin-left: 12px;
+    }
+  }
+}

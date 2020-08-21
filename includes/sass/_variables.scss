@@ -1,0 +1,31 @@
+/* varibles.scss */
+
+$blue: rgb(0,76,107);
+$orange: #930;
+$brightorange: rgb(216,83,42);
+$hazy: rgb(239,239,239);
+$bluegray: rgb(48,60,79);
+$border: #d4d4d5;
+$white: rgb(255,255,255);
+$gray: rgb(150,150,150);
+$darkgray: rgb(80,80,80);
+$lightgray: rgba(34,36,38,.15);
+
+$primary: $orange;
+$secondary: $blue;
+$accent: $bluegray;
+
+
+$primarydark: darken($primary, 5%);
+$secondarydark: darken($secondary, 10%);
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:700');
+@import url("https://use.typekit.net/kvy5nbx.css");
+
+$freightsans: "freight-sans-pro", sans-serif;
+$freightsanscompressed: "freight-sans-compressed-pro", sans-serif;
+$primaryfont: $freightsans;
+$hover: $primarydark;
+$primarytextcolor: #232323;
+$headerfont: $freightsans;
+$contentfontsize: 16px;

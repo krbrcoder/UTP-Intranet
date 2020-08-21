@@ -1,0 +1,50 @@
+@mixin unstyled-list(){
+  ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+}
+
+@mixin primary-orange-label-ribbon(){
+  .ui.ribbon.label {
+    bottom: 1.75rem;
+    top: inherit;
+    font-size: 1.5rem;
+    border-radius: 0;
+    background-color: rgba($primary, .9);
+    color: white;
+    &:hover, &:focus, &:active {
+      color: $hazy;
+      background-color: rgba($secondary, .9);
+    }
+  }
+}
+
+@mixin primary-orange-button(){
+  .ui.orange.button, .primary.button {
+    background-color: rgba($primary, .9)!important;
+    border-radius: 0;
+    color: white;
+    &:hover, &:focus, &:active {
+    color: $hazy;
+    background-color: rgba($secondary, .9)!important;
+  }
+}
+}
+
+@mixin secondary-relaxed-divided-list(){
+  .ui.relaxed.divided.list a {
+    color:$secondary!important;
+  &:hover, &:focus, &:active {
+    color: rgba($primary, .9)!important;
+    cursor:pointer;
+  }
+  }
+}
+
+@mixin primary-inverted-attached-header(){
+  .ui.inverted.attached.header{
+    background-color: rgba($primary, .9)!important;
+  }
+}
